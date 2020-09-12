@@ -14,6 +14,9 @@ class Game {
   }
 
   public function getImagePath() {
+    if ($this->imagePath == null) {
+      return '/images/placeholder.jpg';
+    }
     return $this->imagePath;
   }
 
